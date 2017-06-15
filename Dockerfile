@@ -10,6 +10,11 @@ RUN apt-get update \
                        curl \
                        software-properties-common \
                        net-tools \
+                       tig \
+                       screen \
+                       language-pack-ja \
+                       git-svn \
+                       subversion \
  && add-apt-repository ppa:webupd8team/java \
  && apt-get update \
  && apt-get install oracle-java8-installer \
