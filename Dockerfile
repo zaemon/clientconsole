@@ -10,6 +10,9 @@ RUN apt-get update \
                        curl \
                        software-properties-common \
                        net-tools \
+ && add-apt-repository ppa:webupd8team/java \
+ && apt-get update \
+ && apt-get install oracle-java8-installer \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
